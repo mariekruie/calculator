@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body class="flex jc-c ai-c">
+    <div class="container">
+
+        <form class="flex column">
+            <input id="prevNumber" readonly>
+            <input id="currentNumber" readonly>
+        </form>
+        
+        <div class="panel flex">
+            <div class="left-panel">
+                <div class="operators flex jc-sb">
+                    <button type="button" value="+">+</button>
+                    <button type="button" value="-">-</button>
+                    <button type="button" value="*">&times;</button>
+                    <button type="button" value="/">&divide;</button>
+                </div>
+                <div class="numbers flex jc-sb">
+                    <button type="button" class="number" value="7">7</button>
+                    <button type="button" class="number" value="8">8</button>
+                    <button type="button" class="number" value="9">9</button>
+                </div>
+                <div class="numbers flex jc-sb">
+                    <button type="button" class="number" value="4">4</button>
+                    <button type="button" class="number" value="5">5</button>
+                    <button type="button" class="number" value="6">6</button>
+                </div>
+                <div class="numbers flex jc-sb">
+                    <button type="button" class="number" value="1">1</button>
+                    <button type="button" class="number" value="2">2</button>
+                    <button type="button" class="number" value="3">3</button>
+                </div>
+                <div class="numbers flex jc-sb">
+                    <button type="button" class="number" value="0">0</button>
+                    <button type="button" id="dot" value=".">.</button>  
+                    <button type="button" id="clear" value="reset">C</button>
+                </div>
+            </div>
+            <div class="right-panel flex column">
+                <button type="button" id="backspace" value="backspace">←</button>
+                <button type="button" id="equal" value="equals">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
